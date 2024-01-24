@@ -5,25 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login-Signup</title>
     <link rel="stylesheet" href="style.css">
+    <script src="scripts.js" defer></script>
 </head>
 <body>
     <div class="box">
-        <form>
+        <form onsubmit="return validateForm()">
         
         <div class="container">
           <header>Sign Up</header>
                 <div class="input-field">
-                    <input type="text" class="input" placeholder="Enter Name" name="name" required>
+                    <input type="text" class="input" placeholder="Enter Phone Number" name="name" id="phoneNumber" required>
                 </div>
                 <div class="input-field">
-                    <input type="number" class="input" placeholder="Enter Age" name="age" required>
+                    <input type="number" class="input" placeholder="Enter Age" name="age" id="age" required>
                 </div>
                 
                 <div class="input-field">
-                    <input type="text" class="input" placeholder="Enter Username" name="uname" required>
+                    <input type="text" class="input" placeholder="Enter Username" name="uname" id="username" required>
                 </div>
                 <div class="input-field">
-                    <input type="text" class="input" placeholder="Create Password" name="psw" required>
+                    <input type="text" class="input" placeholder="Create Password" name="psw" id="password" required>
                 </div>
                 
                 
@@ -37,6 +38,7 @@
           <div class="form-link">
             <span>Already have an account? <a href="index.html" class="link signup-link">Login</a></span>
         </div>
+        
     
 </body>
 </html>
