@@ -9,11 +9,17 @@ function validateForm() {
         alert("Please enter a valid 10-digit phone number.");
         return false;
     }
-
+    if (password.length < 8) {
+		document.getElementById("errorMsg").innerHTML = "Your password must include atleast 8 characters"
+		return false;
+	}
     
-
-    if (username === "" || password === "") {
-        alert("Both username and password are required!");
+    if (username === "" || !/^[a-zA-Z][a-zA-Z0-9]*$/.test(username)) {
+        alert("Please enter a valid username. It should start with an alphabet, contain only alphabets and digits, and have no spaces.");
+        return false;
+    }
+    if (age === ""  || parseInt(age) < 0) {
+        alert("Please enter a valid age greater than 0.");
         return false;
     }
 
