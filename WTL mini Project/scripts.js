@@ -4,7 +4,7 @@ function validateForm() {
     var username = document.getElementById('username').value;
     var password = document.getElementById('password').value;
 
-    // Simple validation example (you can enhance this as needed)
+   
     if (phoneNumber === "" || !/^\d{10}$/.test(phoneNumber)) {
         alert("Please enter a valid 10-digit phone number.");
         return false;
@@ -17,7 +17,6 @@ function validateForm() {
         return false;
     }
 
-    // Additional validation logic can be added here
 
     return true;
 }

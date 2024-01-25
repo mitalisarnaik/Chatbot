@@ -11,6 +11,5 @@ function validateLogin() {
 }
 
 function redirectToPage() {
-    // Replace 'target-page.html' with the actual URL of the page you want to redirect to
     window.location.href = 'chatwindow.html';
   }
