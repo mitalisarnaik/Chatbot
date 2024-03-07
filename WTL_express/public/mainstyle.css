@@ -1,0 +1,196 @@
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+header {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 80px;
+    background-color:#0d6efd;
+    
+}
+
+.headlinks {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    gap: 10px;
+    text-align: center;
+    
+}
+
+a {
+    text-decoration: none;
+    font-size: 15px;
+    color: ivory;
+    padding: 10px;
+    border-radius: 10%;
+    font-family: sans-serif
+}
+
+a:hover {
+    
+    color: gainsboro;
+}
+
+.rightbuttons {
+    position:absolute;
+    display: flex;
+    gap: 10px;
+    margin-left: 1200px;
+    margin-top: 20px;
+    
+}
+
+button {
+    border-radius: 10%;
+    height: 40px;
+    width: 60px;
+    font-size: 15px;
+    font-family: sans-serif;
+}
+
+.login {
+    color: #0d6efd;
+    background-color: ivory;
+    border-color: #0d6efd;
+}
+
+.signup {
+    color: #0d6efd;
+    background-color: ivory;
+    border-color: #0d6efd; 
+}
+.signup:hover{
+    background-color: #0d6efd;
+    color: white;
+}
+
+.login:hover {
+    background-color: #0d6efd;
+    color: white;
+}
+
+.mentalimage{
+    height: 100%;
+    width: 100%;
+    background-attachment: local;
+   border: black;
+   border-width: 20px;
+   display: block; 
+ 
+  
+}
+body{
+    
+    margin: 0px;
+    
+
+}
+.botimage{
+    position: absolute;
+    border-radius: 30%;
+    top: 150px; 
+    left: 800px;
+    height: 500px;
+    animation: fadeIn 1.5s ease-out;
+
+    
+  
+}
+.title{
+    position:absolute;
+    top: 110px;
+    left: 200px;
+    font-family:'Pacifico',cursive;
+}
+h2{font-size: 125px;font-weight: lighter;margin-bottom: 5px;animation: fadeIn 1.5s ease-out;}
+
+h3{
+    font-family: Apple Chancery, cursive;
+    font-style: italic;
+    font-size: 25px;
+    animation: fadeIn 1.5s ease-out;
+    margin-bottom: 0px;
+}
+h1{
+    text-align: center;
+    margin-top: 60px;
+    justify-content: center;
+    font-family: Apple Chancery, cursive;
+    font-style: italic;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 250px;
+    text-align: center;
+    margin-top: 0px;
+    margin-left: 40px;
+    
+}
+
+p{
+    font-size: 20px;
+    text-align: center;
+    font-family: Apple Chancery, cursive;
+    font-style: italic;   
+}
+.contact{
+    font-size: 15px;
+}
+footer{
+    background-image: url("mental2.png");
+    margin-top: 80px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.features{
+    width:70%;
+    margin-left: 200px;
+    justify-content: center;
+    text-align: center;
+
+
+}
+li{
+    font-family: Apple Chancery, cursive;
+    font-size: 20px;
+    font-style: italic;
+}
+ul{
+    list-style-type: none;
+    text-align: center;
+}
+
+.contact-table {
+    width: 65%;
+
+    margin-top: 20px;
+}
+
+.contact-table th, .contact-table td {
+   
+    padding: 7px;
+    
+    text-align: center;
+}
+td{
+    font-family: Apple Chancery, cursive;
+}
+th{
+    font-family: Apple Chancery, cursive;
+}
