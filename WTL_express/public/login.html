@@ -5,21 +5,21 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
-  <script src="validation.js" defer></script>
+  <!-- <script src="validation.js" defer></script> -->
   
   <title>Login-Signup</title>
 </head>
 <body>
   <div class="box">
-    <form onsubmit="return validateLogin()">
+    <form action="/login" method="post">
     
     <div class="container">
       <header>Login</header>
             <div class="input-field">
-                <input type="text" class="input" placeholder="Enter Username" name="uname" id="loginUsername" required>
+                <input type="text" class="input" placeholder="Enter Username" name="username" id="username" required>
             </div>
             <div class="input-field">
-                <input type="text" class="input" placeholder="Enter Password" name="psw" id="loginPassword" required>
+                <input type="text" class="input" placeholder="Enter Password" name="password" id="password" required>
             </div>
             <div class="input-field">
                 <button type="submit" class="submit">Login</button>

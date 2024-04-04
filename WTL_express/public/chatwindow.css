@@ -10,11 +10,12 @@ body {
 }
 
 .chat-container {
-    width: 75%; /* Covering 70% of the screen */
+    width: 85%; /* Covering 70% of the screen */
     /* Limiting the width for better readability */
-    height: 90%;
+    height: 98%;
     border-radius: 12px;
-    overflow: hidden;
+    position: relative;
+    overflow-y: auto;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
 }
 
@@ -25,34 +26,22 @@ body {
     text-align: center;
 }
 
-.chat-body {
-    height: 300px;
-    overflow-y: auto;
-    padding: 15px;
-    width: 600px;
-}
 
 .message {
     margin-bottom: 15px;
 }
 
-.user-message {
-    text-align: right;
-    color: black;
-}
-
-.bot-message {
-    text-align: left;
-    color: black;
-}
 
 .input-box {
     display: flex;
+    position: absolute;
     justify-content: space-between;
     align-items: center;
+    bottom: 10px;
+    width: 98%;
     padding: 15px;
     border-top: 2px solid #324190; /* Dark blue border on top */
-    margin-top: 225px;
+    /* margin-top: 500px; */
 }
 
 .input-box input {
@@ -63,6 +52,7 @@ body {
     border-radius: 6px;
     outline: none;
     font-size: 1em;
+    height: fit-content;
 }
 
 .input-box button {
@@ -78,4 +68,27 @@ body {
 
 .input-box button:hover {
     background-color: #4751cc; /* Slightly darker blue on hover */
+}
+
+.messages__item {
+    /* margin: 5px 0;
+    padding: 10px;
+    border-radius: 10px;
+    height: fit-content;
+    width: 100%; Set the width to 100% */
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 10px;
+    width: calc(100% - 20px); 
+}
+
+.messages__item--visitor {
+    text-align: left;
+    background-color: blueviolet; /* Light gray background for user messages */
+}
+
+.messages__item--operator {
+    text-align: right;
+    background-color:  #e0e0e0;; /* Green background for Zenly or chatbot messages */
+    color: black;
 }
